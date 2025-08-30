@@ -31,5 +31,9 @@
 10. display keypresses
 	iscntrl() from ctype.h to test control character since they are non printable 
 
+11. turn off Ctrl-C and Ctrl-Z signals
+	by default 
+	Ctrl-C -> SIGINT : signal to the current process which causes it to terminate 
+	Ctrl-Z -> SIGTSTP : signal to the current process which causes it to suspend
 	
 ----Ch-3

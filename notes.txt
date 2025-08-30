@@ -58,5 +58,11 @@
 	add die() : prints an error and exits
 	perror() from stdio.h [Most C library functions that fail will set the global errno variable to indicate what the error was. perror() looks at the global errno variable and prints a descriptive error message for it. It also prints the string given to it before it prints the error message, which is meant to provide context about what part of your code caused the error.]
 
+19. Sections
 
 ----Ch-3
+
+1. Press Ctrl-Q to quit
+	macro : #define CTRL_KEY(k) ((k) & 0x1f)
+	The CTRL_KEY macro bitwise-ANDs a character with the value 00011111, in binary.
+

@@ -42,5 +42,9 @@
 	Ctrl-S : stops data from being transmitted to terminal until 
 	Ctrl-Q : which resumes data flow
 
+13. Disable Ctrl-V
+
+14. Fix Ctrl-M
+
 
 ----Ch-3

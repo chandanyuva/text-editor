@@ -102,4 +102,6 @@
 	ioctl() -> sys/ioctl.h
 	initEditor() it’s job will be to initialize all the fields in the E struct.
 
-	
+9. Window size, the hard way
+	[The strategy is to position the cursor at the bottom-right of the screen, then use escape sequences that let us query the position of the cursor. That tells us how many rows and columns there must be on the screen.]
+

@@ -1,0 +1,15 @@
+1. setup makefile and git
+
+2. using unistd.h library
+	read() and STDIN_FILENO are from this lib
+
+3. default term goes to "canonical" mode or "cooked" mode
+	in this mode user input is only sent to program after the user presses enter [not usefull for texteditor]
+
+4. we want "raw" mode
+	Unfortunately, there is no simple switch you can flip to set the terminal to raw mode. Raw mode is achieved by turning off a great many flags in the terminal, which we will do gradually over the course of this chapter.
+
+5. use Ctrl-D to tell read() "reached end of file"
+	or use Ctrl-C to signal process to terminate immediately
+
+6.

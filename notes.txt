@@ -35,5 +35,12 @@
 	by default 
 	Ctrl-C -> SIGINT : signal to the current process which causes it to terminate 
 	Ctrl-Z -> SIGTSTP : signal to the current process which causes it to suspend
-	
+
+12. disable Ctrl-S and Ctrl-Q
+	by default 
+	they are used for software flow control
+	Ctrl-S : stops data from being transmitted to terminal until 
+	Ctrl-Q : which resumes data flow
+
+
 ----Ch-3

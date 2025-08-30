@@ -1,4 +1,7 @@
+----Ch-1
 1. setup makefile and git
+
+----Ch-2
 
 2. using unistd.h library
 	read() and STDIN_FILENO are from this lib
@@ -12,4 +15,13 @@
 5. use Ctrl-D to tell read() "reached end of file"
 	or use Ctrl-C to signal process to terminate immediately
 
-6.
+6. adding 'q' to quit
+
+7. turn off echoing
+	The ECHO feature causes each key you type to be printed to the terminal, so you can see what you’re typing. This is useful in canonical mode, but really gets in the way when we are trying to carefully render a user interface in raw mode.
+	Ctrl-c and type "reset" 
+
+8. disable raw mode at exit
+	We’ll save a copy of the termios struct in its original state, and use tcsetattr() to apply it to the terminal when the program exits.	
+
+----Ch-3

@@ -52,7 +52,7 @@
 
 17. A timeout for read()
 
-###now enableRawMode() gets us fully into raw mode
+### now enableRawMode() gets us fully into raw mode
 
 18. error handling
 	add die() : prints an error and exits
@@ -65,4 +65,17 @@
 1. Press Ctrl-Q to quit
 	macro : #define CTRL_KEY(k) ((k) & 0x1f)
 	The CTRL_KEY macro bitwise-ANDs a character with the value 00011111, in binary.
+
+2. Refactor keyboard input
+
+### also stop printing out keypresses at this point.
+
+	2.1. a function for low-level keypress reading
+		editorReadKey()’s job is to wait for one keypress, and return it.
+		(later) handle escape sequences 
+	2.2. another function for mapping keypresses to editor operations.
+		editorProcessKeypress() waits for a keypress, and then handles it.
+		(later) it will map various Ctrl key combos
+
+
 

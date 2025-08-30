@@ -97,4 +97,9 @@
 	We don’t know the size of the terminal yet, so we don’t know how many rows to draw. For now we just draw 24 rows.
 
 7. global state
+
+8. Window size, the easy way
+	ioctl() -> sys/ioctl.h
+	initEditor() it’s job will be to initialize all the fields in the E struct.
+
 	

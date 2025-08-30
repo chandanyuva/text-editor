@@ -28,5 +28,8 @@
 	There is an ICANON flag that allows us to turn off canonical mode. This means we will finally be reading input byte-by-byte, instead of line-by-line.
 	Now the program will quit as soon as you press q.
 
-10. 
+10. display keypresses
+	iscntrl() from ctype.h to test control character since they are non printable 
+
+	
 ----Ch-3

@@ -48,5 +48,7 @@
 
 15. Turn off all output processing
 
+16. Miscellaneous flags
+
 
 ----Ch-3

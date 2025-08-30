@@ -24,4 +24,9 @@
 8. disable raw mode at exit
 	We’ll save a copy of the termios struct in its original state, and use tcsetattr() to apply it to the terminal when the program exits.	
 
+9. turn off canonical mode
+	There is an ICANON flag that allows us to turn off canonical mode. This means we will finally be reading input byte-by-byte, instead of line-by-line.
+	Now the program will quit as soon as you press q.
+
+10. 
 ----Ch-3

@@ -106,5 +106,9 @@
 	[The strategy is to position the cursor at the bottom-right of the screen, then use escape sequences that let us query the position of the cursor. That tells us how many rows and columns there must be on the screen.]
 
 10. The last line
-  When we print the final tilde, we then print a "\r\n" like on any other line, but this causes the terminal to scroll in order to make room for a new, blank line. Let’s make the last line an exception when we print our "\r\n"’s
+    When we print the final tilde, we then print a "\r\n" like on any other line, but this causes the terminal to scroll in order to make room for a new, blank line. Let’s make the last line an exception when we print our "\r\n"’s
+
+11. append buffer
+    small write()'s not good : there could be small unpredictable pauses between write()’s, which would cause an annoying flicker effect.
+    make one big write at once : We want to replace all our write() calls with code that appends the string to a buffer, and then write() this buffer out at the end. Unfortunately, C doesn’t have dynamic strings, so we’ll create our own dynamic string type that supports one operation: appending.
 

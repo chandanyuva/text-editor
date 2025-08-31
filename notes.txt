@@ -117,3 +117,8 @@
 
 13. clear lines one at a time
     Instead of clearing the entire screen before each refresh, it seems more optimal to clear each line as we redraw them.
+
+14. welcome message
+   To center a string, you divide the screen width by 2, and then subtract half of the string’s length from that. In other words: E.screencols/2 - welcomelen/2, which simplifies to (E.screencols - welcomelen) / 2.
+
+

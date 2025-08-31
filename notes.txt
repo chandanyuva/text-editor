@@ -115,4 +115,5 @@
 12. Hide the cursor when repainting
     We use escape sequences to tell the terminal to hide and show the cursor. The h and l commands (Set Mode, Reset Mode) are used to turn on and turn off various terminal features or “modes”.
 
-
+13. clear lines one at a time
+    Instead of clearing the entire screen before each refresh, it seems more optimal to clear each line as we redraw them.

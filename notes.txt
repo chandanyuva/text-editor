@@ -112,3 +112,7 @@
     small write()'s not good : there could be small unpredictable pauses between write()’s, which would cause an annoying flicker effect.
     make one big write at once : We want to replace all our write() calls with code that appends the string to a buffer, and then write() this buffer out at the end. Unfortunately, C doesn’t have dynamic strings, so we’ll create our own dynamic string type that supports one operation: appending.
 
+12. Hide the cursor when repainting
+    We use escape sequences to tell the terminal to hide and show the cursor. The h and l commands (Set Mode, Reset Mode) are used to turn on and turn off various terminal features or “modes”.
+
+

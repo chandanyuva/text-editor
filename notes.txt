@@ -121,4 +121,6 @@
 14. welcome message
    To center a string, you divide the screen width by 2, and then subtract half of the string’s length from that. In other words: E.screencols/2 - welcomelen/2, which simplifies to (E.screencols - welcomelen) / 2.
 
+15. Move the cursor
+
 
